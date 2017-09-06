@@ -6,10 +6,9 @@ Projet dans le cadre du cours de Programmation pour Internet II de Isaac Panté,
 
 Description
 
-Momentum2 est une application qui se base sur une application déjà existante (Momentum). Le but de Momentum2 est d'offrir à l'utilisateur une plateforme sur laquelle il peut introduire des activités qu'il réalise régulièrement afin de tracer le rythme auquel il les réalise et de s'imposer un...... par semaine. Cela lui permet aussi de suivre s'il réussi à .......
+Momentum2 est une application qui se base sur une application déjà existante (Momentum). Le but de Momentum2 est d'offrir à l'utilisateur une plateforme sur laquelle il peut introduire des activités qu'il réalise régulièrement afin de tracer le rythme auquel il les réalise et de s'organiser afin de réussir à les faire un nombre de fois par semaine. 
 
-
-. Pour ce fait, la plateforme est designée sur deux axes: sur le axe X on trouve des dates et sur le axe Y on trouve les activités. De cette façon, il y a une case correspondant à une date et à une activité uniquement. Ainsi, l'utilisateur peut cocher les cases qui correspondent au jour et à l'activité qu'il a réalisé et suivre le rythme auquel il la réalise. Momentum2 permet aussi à l'utilisateur d'activer des rappels pour chaque activité s'il le souhaite et il peut également fixer le nombre de fois qu'il souhaite réaliser une activité, le nombre maximun par semaine étant six.
+Pour ce fait, la plateforme est designée sur deux axes: sur le axe X on trouve des dates et sur le axe Y on trouve les activités. De cette façon, il y a une case correspondant à une date et à une activité uniquement. Ainsi, l'utilisateur peut cocher les cases qui correspondent au jour et à l'activité qu'il a réalisé et suivre le rythme auquel il la réalise. Momentum2 permet aussi à l'utilisateur d'activer des rappels pour chaque activité s'il le souhaite et il peut également fixer le nombre de fois qu'il souhaite réaliser une activité, le nombre maximun par semaine étant six.
 
 
 Interface
