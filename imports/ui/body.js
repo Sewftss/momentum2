@@ -3,8 +3,46 @@
 import { Meteor } from 'meteor/meteor';
 import { Template } from 'meteor/templating';
  
-import './body.html';
+import { Tasks } from '../api/tasks.js';
+
  
+import './body.html';
+ Template.body.helpers({
+  tasks() {
+    return Tasks.find({});
+  },
+});
+
+
+
+let cont1 = document.createElement("div");
+cont1.className+="container1";
+document.body.appendChild(cont1);
+
+let cont2 = document.createElement("div");
+cont2.className+="container2";
+document.body.appendChild(cont2);
+
+let liste = document.createElement("div");
+liste.className+="liste";
+cont2.appendChild(liste);
+
+let butco = document.createElement("div");
+butco.className+="butco";
+cont2.appendChild(butco);
+
+let butto = document.createElement("button");
+butto.className+="butto";
+butto.innerHTML="Ajouter une activité";
+butco.appendChild(butto);
+
+let activites = document.createElement("div");
+activites.className+="activites";
+cont1.appendChild(activites);
+
+let dates = document.createElement("div");
+dates.className+="dates";
+cont1.appendChild(dates);
 
 
 for(let k=0;k<=1;k++){
@@ -17,13 +55,7 @@ for(let i=1;i<= 31;i++){
   else {
     nb.innerHTML=i;
   }
-  nb.style.fontSize=30+"px";
-  nb.style.color="#999999"
-  nb.style.fontFamily="arial";
-  nb.style.padding=15+"px";
-  nb.style.border="solid black 1px";
-  nb.style.background="white";
-  document.body.appendChild(nb);
+  dates.appendChild(nb);
 
 }
 
@@ -35,13 +67,7 @@ for(let i=1;i<= 31;i++){
   else {
     nb.innerHTML=i;
   }
-  nb.style.fontSize=30+"px";
-  nb.style.color="#999999"
-  nb.style.fontFamily="arial";
-  nb.style.padding=15+"px";
-  nb.style.border="solid black 1px";
-  nb.style.background="white";
-  document.body.appendChild(nb);
+  dates.appendChild(nb);
 
 }
 
@@ -53,13 +79,7 @@ for(let i=1;i<= 31;i++){
   else {
     nb.innerHTML=i;
   }
-  nb.style.fontSize=30+"px";
-  nb.style.color="#999999"
-  nb.style.fontFamily="arial";
-  nb.style.padding=15+"px";
-  nb.style.border="solid black 1px";
-  nb.style.background="white";
-  document.body.appendChild(nb);
+  dates.appendChild(nb);
 
 }
 
@@ -71,13 +91,7 @@ for(let i=1;i<= 30;i++){
   else {
     nb.innerHTML=i;
   }
-  nb.style.fontSize=30+"px";
-  nb.style.color="#999999"
-  nb.style.fontFamily="arial";
-  nb.style.padding=15+"px";
-  nb.style.border="solid black 1px";
-  nb.style.background="white";
-  document.body.appendChild(nb);
+  dates.appendChild(nb);
 
 }
 
@@ -89,13 +103,7 @@ for(let i=1;i<= 31;i++){
   else {
     nb.innerHTML=i;
   }
-  nb.style.fontSize=30+"px";
-  nb.style.color="#999999"
-  nb.style.fontFamily="arial";
-  nb.style.padding=15+"px";
-  nb.style.border="solid black 1px";
-  nb.style.background="white";
-  document.body.appendChild(nb);
+  dates.appendChild(nb);
 
 }
 
@@ -107,13 +115,7 @@ for(let i=1;i<= 30;i++){
   else {
     nb.innerHTML=i;
   }
-  nb.style.fontSize=30+"px";
-  nb.style.color="#999999"
-  nb.style.fontFamily="arial";
-  nb.style.padding=15+"px";
-  nb.style.border="solid black 1px";
-  nb.style.background="white";
-  document.body.appendChild(nb);
+  dates.appendChild(nb);
 
 
 }
@@ -126,13 +128,7 @@ for(let i=1;i<= 31;i++){
   else {
     nb.innerHTML=i;
   }
-  nb.style.fontSize=30+"px";
-  nb.style.color="#999999"
-  nb.style.fontFamily="arial";
-  nb.style.padding=15+"px";
-  nb.style.border="solid black 1px";
-  nb.style.background="white";
-  document.body.appendChild(nb);
+  dates.appendChild(nb);
 
 }
 
@@ -146,13 +142,7 @@ for(let i=1;i<= 31;i++){
   else {
     nb.innerHTML=i;
   }
-  nb.style.fontSize=30+"px";
-  nb.style.color="#999999"
-  nb.style.fontFamily="arial";
-  nb.style.padding=15+"px";
-  nb.style.border="solid black 1px";
-  nb.style.background="white";
-  document.body.appendChild(nb);
+  dates.appendChild(nb);
 
 }
 
@@ -165,13 +155,7 @@ for(let i=1;i<= 30;i++){
   else {
     nb.innerHTML=i;
   }
-  nb.style.fontSize=30+"px";
-  nb.style.color="#999999"
-  nb.style.fontFamily="arial";
-  nb.style.padding=15+"px";
-  nb.style.border="solid black 1px";
-  nb.style.background="white";
-  document.body.appendChild(nb);
+  dates.appendChild(nb);
 
 }
 
@@ -183,13 +167,7 @@ for(let i=1;i<= 31;i++){
   else {
     nb.innerHTML=i;
   }
-  nb.style.fontSize=30+"px";
-  nb.style.color="#999999"
-  nb.style.fontFamily="arial";
-  nb.style.padding=15+"px";
-  nb.style.border="solid black 1px";
-  nb.style.background="white";
-  document.body.appendChild(nb);
+  dates.appendChild(nb);
 
 
 
@@ -203,13 +181,7 @@ for(let i=1;i<= 30;i++){
   else {
     nb.innerHTML=i;
   }
-  nb.style.fontSize=30+"px";
-  nb.style.color="#999999"
-  nb.style.fontFamily="arial";
-  nb.style.padding=15+"px";
-  nb.style.border="solid black 1px";
-  nb.style.background="white";
-  document.body.appendChild(nb);
+  dates.appendChild(nb);
 
 }
 
@@ -221,22 +193,9 @@ for(let i=1;i<= 31;i++){
   else {
     nb.innerHTML=i;
   }
-  nb.style.fontSize=30+"px";
-  nb.style.color="#999999"
-  nb.style.fontFamily="arial";
-  nb.style.padding=15+"px";
-  nb.style.border="solid black 1px";
-  nb.style.background="white";
-  document.body.appendChild(nb);
+  dates.appendChild(nb);
 
 }
 
 
 }
-//-----------------------------------------
-
-function myFunction() {
-    document.getElementById("demo").innerHTML = "Hello World";
-}
-
-
